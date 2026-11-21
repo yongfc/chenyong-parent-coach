@@ -42,7 +42,7 @@
   });
 
   var navLinks = document.querySelectorAll("[data-nav]");
-  var sections = ["consult", "ai", "contact"].map(function (id) {
+  var sections = ["consult", "assess", "ai", "contact"].map(function (id) {
     return document.getElementById(id);
   }).filter(Boolean);
   if ("IntersectionObserver" in window && sections.length && navLinks.length) {
