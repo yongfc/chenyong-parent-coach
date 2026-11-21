@@ -53,7 +53,6 @@
             <p class="kicker">家庭教育咨询</p>
             <h1>陈咏</h1>
             <p class="display">把注意力放在家里正在发生的事</p>
-            <p class="lede">我陪家长看孩子现在的成长：孩子为什么不愿意开始，学习卡在哪一步，这一天的节奏还有没有余地。</p>
           </div>
         </div>
       </header>
@@ -63,25 +62,12 @@
         </figure>
         <div class="portrait-copy">
           <p class="hero-card-kicker">这一页只谈三件事</p>
-          <ul class="focus" aria-label="三个主题">
-            <li>内驱力</li>
-            <li>学习力</li>
-            <li>生命力</li>
-          </ul>
-          <ol class="hero-points">
-            <li>
-              <span>内驱力</span>
-              行动从孩子自己的理由里长出来，而不是靠更大的声音。
-            </li>
-            <li>
-              <span>学习力</span>
-              孩子知道下一小步怎么做，比再多坐一会儿更有用。
-            </li>
-            <li>
-              <span>生命力</span>
-              不是把日子过成轻松，而是让孩子还有力气去学。
-            </li>
-          </ol>
+          <div class="focus" role="group" aria-label="三个主题">
+            <button type="button" class="pill" data-theme data-jump="drive" data-line="行动从孩子自己的理由里长出来，而不是靠更大的声音。" aria-pressed="false">内驱力</button>
+            <button type="button" class="pill" data-theme data-jump="study" data-line="孩子知道下一小步怎么做，比再多坐一会儿更有用。" aria-pressed="false">学习力</button>
+            <button type="button" class="pill pill-clay" data-theme data-jump="life" data-line="不是把日子过成轻松，而是让孩子还有力气去学。" aria-pressed="false">生命力</button>
+          </div>
+          <p class="theme-line" data-theme-line hidden></p>
           <a class="text-link" href="#consult">看咨询服务</a>
         </div>
       </aside>
@@ -118,7 +104,7 @@
       </section>
       </div>
 
-      <section class="band reveal" id="consult" aria-labelledby="consult-title">
+      <section class="band reveal tone-sage" id="consult" aria-labelledby="consult-title">
         <div class="section-head">
           <span class="idx">02</span>
           <div>
@@ -187,20 +173,31 @@
           </article>
         </div>
 
-        <div class="talk">
-          <h3>一次对话里，通常会谈到</h3>
-          <ol class="talk-grid">
-            <li>你眼下最放不下的一件事</li>
-            <li>孩子最近的状态，以及你已经试过的做法</li>
-            <li>这一周可以小幅调整的一两处</li>
-            <li>若事情超出家庭教育咨询的范围，我会直接说明，并建议去找相应的专业帮助</li>
-          </ol>
-        </div>
+        <article class="card acc">
+          <h3>
+            <button type="button" class="acc-btn" data-acc aria-expanded="false" aria-controls="talk-panel" id="talk-btn">
+              <span class="acc-copy">
+                <span class="acc-title">一次对话里，通常会谈到</span>
+              </span>
+              <span class="chev" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="acc-panel" id="talk-panel" role="region" aria-labelledby="talk-btn">
+            <div class="acc-inner">
+              <ol class="talk-grid">
+                <li>你眼下最放不下的一件事</li>
+                <li>孩子最近的状态，以及你已经试过的做法</li>
+                <li>这一周可以小幅调整的一两处</li>
+                <li>若事情超出家庭教育咨询的范围，我会直接说明，并建议去找相应的专业帮助</li>
+              </ol>
+            </div>
+          </div>
+        </article>
 
         <p class="boundary">咨询只处理家庭里的教育与陪伴，不替代医疗、心理治疗，也不替代学校的正式评估。</p>
       </section>
 
-      <section class="band reveal" id="assess" aria-labelledby="assess-title">
+      <section class="band reveal tone-tea" id="assess" aria-labelledby="assess-title">
         <div class="section-head">
           <span class="idx">03</span>
           <div>
@@ -208,27 +205,66 @@
           </div>
         </div>
         <div class="assess-lead">
-          <p>如果你希望先看清孩子在某一面上的情况，可以单独约一次测评。三项分开进行，从你最想先看的那一项开始。每次大约半小时，99元。</p>
+          <p>如果你希望先看清孩子在某一面上的情况，可以单独约一次测评。三项分开进行，从你最想先看的那一项开始。每次大约半小时，<span class="price">99元</span>。</p>
           <p>测评是一次有重点的交谈，不是考试，也不出具学校或医疗机构使用的正式评估。我们会围绕一项，看孩子最近的具体表现，以及家里已经试过的做法，再把眼前最值得留意的地方说清楚。</p>
         </div>
-        <ol class="steps">
-          <li class="card step">
-            <h3>内驱力测评</h3>
-            <p>看孩子做一件事时，动力从哪里来：是自己想试，还是主要靠提醒和催促。也会看什么时候比较愿意开始，什么情况下容易停下，以及你的哪一种反应会让行动更容易，或更难。结束后，你会更清楚：眼下卡住的，更像是任务太大、怕错，还是自己想做的理由变少了；这一两周可以先动哪里。</p>
-          </li>
-          <li class="card step">
-            <h3>学习力测评</h3>
-            <p>看孩子面对作业或不会的题时，实际是怎么做的：会不会把任务拆开、卡住时先问什么、错了之后会不会回看，以及作息是否还能撑住第二天的学习。结束后，你会更清楚：时间花了，卡在哪一步；哪一步适合让孩子自己完成，哪一步需要把做法讲具体。</p>
-          </li>
-          <li class="card step">
-            <h3>生命力测评</h3>
-            <p>看学习要持续时，生活里还有没有余量。睡眠、吃饭、运动、情绪，还有亲子之间的气氛，都会带到第二天的学习里。结束后，你会更清楚：一天里什么已经太满，什么可以留白；怎样让孩子还有力气去学。</p>
-          </li>
-        </ol>
+        <div class="stack">
+          <article class="card acc">
+            <h3>
+              <button type="button" class="acc-btn" data-acc aria-expanded="false" aria-controls="assess-drive" id="assess-drive-btn">
+                <span class="num">01</span>
+                <span class="acc-copy">
+                  <span class="acc-title">内驱力测评</span>
+                  <span class="acc-tease">看孩子做一件事时，动力从哪里来。</span>
+                </span>
+                <span class="chev" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="acc-panel" id="assess-drive" role="region" aria-labelledby="assess-drive-btn">
+              <div class="acc-inner">
+                <p>看孩子做一件事时，动力从哪里来：是自己想试，还是主要靠提醒和催促。也会看什么时候比较愿意开始，什么情况下容易停下，以及你的哪一种反应会让行动更容易，或更难。结束后，你会更清楚：眼下卡住的，更像是任务太大、怕错，还是自己想做的理由变少了；这一两周可以先动哪里。</p>
+              </div>
+            </div>
+          </article>
+          <article class="card acc">
+            <h3>
+              <button type="button" class="acc-btn" data-acc aria-expanded="false" aria-controls="assess-study" id="assess-study-btn">
+                <span class="num">02</span>
+                <span class="acc-copy">
+                  <span class="acc-title">学习力测评</span>
+                  <span class="acc-tease">看孩子面对作业或不会的题时，实际是怎么做的。</span>
+                </span>
+                <span class="chev" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="acc-panel" id="assess-study" role="region" aria-labelledby="assess-study-btn">
+              <div class="acc-inner">
+                <p>看孩子面对作业或不会的题时，实际是怎么做的：会不会把任务拆开、卡住时先问什么、错了之后会不会回看，以及作息是否还能撑住第二天的学习。结束后，你会更清楚：时间花了，卡在哪一步；哪一步适合让孩子自己完成，哪一步需要把做法讲具体。</p>
+              </div>
+            </div>
+          </article>
+          <article class="card acc">
+            <h3>
+              <button type="button" class="acc-btn" data-acc aria-expanded="false" aria-controls="assess-life" id="assess-life-btn">
+                <span class="num">03</span>
+                <span class="acc-copy">
+                  <span class="acc-title">生命力测评</span>
+                  <span class="acc-tease">看学习要持续时，生活里还有没有余量。</span>
+                </span>
+                <span class="chev" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="acc-panel" id="assess-life" role="region" aria-labelledby="assess-life-btn">
+              <div class="acc-inner">
+                <p>看学习要持续时，生活里还有没有余量。睡眠、吃饭、运动、情绪，还有亲子之间的气氛，都会带到第二天的学习里。结束后，你会更清楚：一天里什么已经太满，什么可以留白；怎样让孩子还有力气去学。</p>
+              </div>
+            </div>
+          </article>
+        </div>
         <p class="boundary">预约走微信即可。测评只处理家庭里的教育与陪伴，不替代医疗、心理治疗，也不替代学校的正式评估。</p>
       </section>
 
-      <section class="band reveal" id="ai" aria-labelledby="ai-title">
+      <section class="band reveal tone-forest" id="ai" aria-labelledby="ai-title">
         <div class="section-head">
             <span class="idx">04</span>
           <div>
@@ -258,7 +294,7 @@
         <p class="boundary">这些方法可以单独试，也可以在咨询里按你家的情况调整。它们辅助学习，不代替学校教学，也不代替孩子自己的思考。</p>
       </section>
 
-      <section class="band reveal" id="contact" aria-labelledby="contact-title">
+      <section class="band reveal tone-ink" id="contact" aria-labelledby="contact-title">
         <div class="section-head">
           <span class="idx">05</span>
           <div>
