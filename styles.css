@@ -998,12 +998,14 @@ html.js .reveal.is-in .step:hover { transition-delay: 0s; transform: translateY(
   .intro .scenes { grid-column: auto; grid-row: auto; }
   .intro .scenes { margin-top: 0.4rem; }
   .portrait-card {
-    grid-template-columns: minmax(240px, 0.78fr) minmax(0, 1.22fr);
+    grid-template-columns: minmax(0, 1.22fr) minmax(240px, 0.78fr);
     align-items: end;
-    padding: 0 1.7rem 1.3rem 0.35rem;
+    padding: 0 0.4rem 1.3rem 1.55rem;
   }
+  .portrait-copy { order: 1; padding-right: 0.4rem; }
   .portrait {
-    padding: 1.1rem 0.2rem 0.85rem 0.15rem;
+    order: 2;
+    padding: 1.1rem 0.45rem 0.85rem 0.15rem;
   }
   .portrait img {
     width: min(100%, 430px);
