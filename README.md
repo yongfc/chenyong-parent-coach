@@ -23,9 +23,7 @@ python3 -m http.server 47291
 - `assets/wechat-qr.jpeg`
 - `assets/wechat-qr.webp`
 
-刷新页面后，图片会出现在联系区域。放入之前，页面只保留空白框，不写电话、微信号、邮箱或地址。
-
-分享给家长之前，请先放好你自己的二维码。
+当前页面已经放了 `assets/wechat-qr.png`。若换图，仍可使用 png、jpg、jpeg 或 webp 这几个文件名，刷新后联系区域会显示找到的第一张。页面不写电话、微信号、邮箱或地址。
 
 ## 发布到公网
 
@@ -49,13 +47,11 @@ python3 -m http.server 47291
 
 `index.html` 里的 `og:image` 已写成 `https://yongfc.github.io/chenyong-parent-coach/assets/share-card.png`。发到微信里时，链接卡片用的是这张绝对地址。
 
-页面上的「小探索」只在浏览器里做选择，不提交、不写入本地存储。
-
 ## 文件
 
 - `index.html`：页面
 - `styles.css`：样式
-- `site.js`：页内展开、场景跳转、小探索、二维码探测
+- `site.js`：页内展开、场景跳转、滚动进度、二维码探测
 - `favicon.svg`：图标
 - `assets/share-card.png`：链接分享图
 - `assets/wechat-qr.txt`：二维码放置说明
