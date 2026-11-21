@@ -47,12 +47,15 @@ python3 -m http.server 47291
 3. Framework Preset 选 **Other**。Build Command 和 Output Directory 都留空。
 4. Deploy。完成后会得到 `https://<项目名>.vercel.app`。
 
-部署完成、拿到网址之后，把 `index.html` 里的 `og:image` 改成绝对地址（例如 `https://你的域名/assets/share-card.png`）。这样发到微信里时，链接卡片更容易显示出图片。
+`index.html` 里的 `og:image` 已写成 `https://yongfc.github.io/chenyong-parent-coach/assets/share-card.png`。发到微信里时，链接卡片用的是这张绝对地址。
+
+页面上的「小探索」只在浏览器里做选择，不提交、不写入本地存储。
 
 ## 文件
 
 - `index.html`：页面
 - `styles.css`：样式
+- `site.js`：页内展开、场景跳转、小探索、二维码探测
 - `favicon.svg`：图标
 - `assets/share-card.png`：链接分享图
 - `assets/wechat-qr.txt`：二维码放置说明
